@@ -1,0 +1,34 @@
+{
+  "name": "svelte-base",
+  "version": "1.0.0",
+  "description": "Basic svelte and express template I use for my application",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack",
+    "release": "cross-env NODE_ENV=production webpack",
+    "server": "node server.js",
+    "start": "npm run build & npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigaston/svelte-base.git"
+  },
+  "author": "Bigaston",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Bigaston/svelte-base/issues"
+  },
+  "homepage": "https://github.com/Bigaston/svelte-base#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "style-loader": "^1.1.3",
+    "svelte": "^3.20.1",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
